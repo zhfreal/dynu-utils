@@ -1,0 +1,21 @@
+name: dynu-utils
+base: core22
+version: '1.2.0'
+summary: An tool for manage dns records on dynu.com
+description: |
+  This tool can list domains, add update delete domains, list records, add and update delete records.
+grade: stable
+confinement: strict
+
+parts:
+  dynu-utils:
+    plugin: python
+    source: .
+    python-packages:
+      - gevent
+      - requests
+
+apps:
+  dynu-utils:
+    command: bin/dynu-utils
+    plugs: [network, network-bind]
