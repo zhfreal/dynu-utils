@@ -22,8 +22,8 @@ setup(
         # 'Say Thanks!': '',
     },
     install_requirts=[
-        'requests>=2.31.0',
-        'gevent>=24.2.1'
+        'requests>=2.27.0',
+        'gevent>=21.8.0'
     ],
     # package_dir={'': 'src'},
     packages=['src'],
