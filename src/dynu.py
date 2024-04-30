@@ -555,7 +555,7 @@ def main():
     args = parser.parse_args()
 
     if args.version:
-        from __init__ import __version__
+        from src import __version__
         print(f"dynu-utils Version: {__version__}")
         sys.exit(0)
 
