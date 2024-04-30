@@ -21,7 +21,7 @@ setup(
         # 'Funding': '',
         # 'Say Thanks!': '',
     },
-    install_requirts=[
+    install_requires=[
         'requests>=2.27.0',
         'gevent>=21.8.0'
     ],
